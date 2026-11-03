@@ -28,16 +28,36 @@ def run_kmeans(X,c,seed):
                 converged=bool(model.n_iter_<300),valid=bool(len(np.unique(model.labels_))==c))
 
 def ncut_matrix(X,neighbors,sigma):
+    """Normalize Gaussian weights in log space, without self-loops or floors.
+    Extended precision reduces cancellation for extreme bandwidths.
+    Tiny normalized edges may still vanish: this reflects effective disconnection.
+    """
     if sigma<=0:raise ValueError('Positive bandwidth required')
-    n,k=neighbors.shape;distances=np.sum((X[:,None,:]-X[neighbors])**2,axis=2)
-    weights=np.exp(-distances/(sigma*sigma))
-    A=coo_matrix((weights.ravel(),(np.repeat(np.arange(n),k),neighbors.ravel())),shape=(n,n)).tocsr()
-    A=A.maximum(A.T);A.eliminate_zeros()
-    degree=np.asarray(A.sum(1)).ravel()
-    if np.any(degree<=np.finfo(float).tiny):
-        raise ValueError(f'Gaussian affinity underflow: {int(np.sum(degree<=np.finfo(float).tiny))} isolated/underflowed vertices; bandwidth not changed')
-    inv=diags(1/np.sqrt(degree));L=eye(n,format='csr')-inv@A@inv
-    return L,degree,dict(components=int(connected_components(A,directed=False,return_labels=False)),affinity_nonzeros=int(A.nnz),degree_min=float(degree.min()))
+    n,k=neighbors.shape
+    edges=set()
+    for i,js in enumerate(neighbors):
+        for j in js:
+            if i!=j:edges.add((min(i,int(j)),max(i,int(j))))
+    pairs=np.array(sorted(edges));u,v=pairs.T
+    dist=np.sum((X[u]-X[v])**2,axis=1,dtype=np.longdouble)
+    rows=np.r_[u,v];cols=np.r_[v,u]
+    logw=np.r_[-dist,-dist]/np.longdouble(sigma)**2
+    maxima=np.full(n,-np.inf,dtype=np.longdouble)
+    np.maximum.at(maxima,rows,logw)
+    if not np.isfinite(maxima).all():raise ValueError('Neighbor graph has isolated vertices')
+    sums=np.zeros(n,dtype=np.longdouble)
+    np.add.at(sums,rows,np.exp(logw-maxima[rows]))
+    logdegree=maxima+np.log(sums)
+    logs=np.log(sums)
+    lognormalized=((logw-maxima[rows])+(logw-maxima[cols]))/2-(logs[rows]+logs[cols])/2
+    normalized=np.exp(lognormalized).astype(float)
+    S=coo_matrix((normalized,(rows,cols)),shape=(n,n)).tocsr();S.eliminate_zeros()
+    L=eye(n,format='csr')-S
+    return L,{'log_degree':logdegree,'log_weight_max':maxima,'log_weight_sum':logs},dict(
+        components=int(connected_components(S,directed=False,return_labels=False)),
+        affinity_nonzeros=int(S.nnz),log_degree_min=float(logdegree.min()),
+        normalized_edges_underflowed=int(np.sum(normalized==0)),
+        affinity_computation='log-domain normalization; longdouble intermediates; no weight floor')
 
 def llc_linear_matrix(X,neighbors,reg):
     if reg<=0:raise ValueError('Positive regularization required')
@@ -78,9 +98,21 @@ def spectral_rows(L,c,Q=None,reg=None):
     return G/norms,dict(eigenvalues=actual.tolist(),eigen_residual=float(err),solver=solver,zero_embedding_rows=int(zero_rows.sum()),zero_row_policy='keep zero; deterministic argmax tie')
 
 def ncut_objective(L,degree,labels,c):
-    Y=np.eye(c)[labels];vol=degree@Y
-    if np.any(vol<=0):return float('inf')
-    G=np.sqrt(degree[:,None])*Y/np.sqrt(vol)
+    Y=np.eye(c)[labels]
+    if np.any(Y.sum(0)==0):return float('inf')
+    if isinstance(degree,dict):
+        ld=degree['log_degree'];G=np.zeros_like(Y)
+        for j in range(c):
+            mask=labels==j
+            if 'log_weight_max' in degree:
+                a=degree['log_weight_max'][mask];relative=a-a.max()+degree['log_weight_sum'][mask]
+            else:relative=ld[mask]-ld[mask].max()
+            logsum=np.log(np.exp(relative).sum())
+            G[mask,j]=np.exp((relative-logsum)/2).astype(float)
+    else:
+        vol=degree@Y
+        if np.any(vol<=0):return float('inf')
+        G=np.sqrt(degree[:,None])*Y/np.sqrt(vol)
     return float(np.sum(G*(L@G)))
 
 def run_spectral(F,L,c,seed,degree=None):

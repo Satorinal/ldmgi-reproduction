@@ -42,7 +42,7 @@ python audit_results.py
 python audit_baselines.py
 ```
 
-The saved LDMGI benchmark contains 540 starts; additional baseline runs are stored separately. Coverage and explicitly failed NCut bandwidths are listed in RESULTS.md. Inputs are downloaded once and cached in `data/`. Raw datasets are excluded from the source archive. To work offline, download the named files from the sources below and place them in `data/`.
+The saved LDMGI benchmark contains 540 starts; additional baseline runs are stored separately. Coverage and numerical degeneracies are listed in RESULTS.md. NCut now uses log-domain Gaussian normalization. Inputs are downloaded once and cached in `data/`. Raw datasets are excluded from the source archive. To work offline, download the named files from the sources below and place them in `data/`.
 
 Use a distinct `--output` directory to preserve earlier experiments. `report.json` is checkpointed after each parameter; automatic resume is not implemented. One eigensolve is shared by all initializations at each parameter. `--samples` and `--selection` apply only to MNIST; COIL-20 and USPS always use their complete datasets. `--dataset digits` is an offline smoke benchmark using sklearn's 8x8 digits, not MNIST and not a paper benchmark.
 
@@ -66,7 +66,7 @@ USPS combines both splits for unsupervised clustering, not supervised train/test
 
 ## All-method tables, curves and PCA/t-SNE
 
-`make_comparison_results.py` reads saved results and generates four tables: best ACC, best NMI, mean ACC with standard deviation, and mean NMI with standard deviation. All five method columns are actual executions on the same samples. Tables and combined parameter curves are in `results/comparison/`, exported as PNG/SVG and numeric CSV; tables also include Markdown and LaTeX versions. K-means is a parameter-free horizontal reference in the curves. Failed NCut bandwidths remain gaps.
+`make_comparison_results.py` reads saved results and generates four tables: best ACC, best NMI, mean ACC with standard deviation, and mean NMI with standard deviation. All five method columns are actual executions on the same samples. Tables and combined parameter curves are in `results/comparison/`, exported as PNG/SVG and numeric CSV; tables also include Markdown and LaTeX versions. K-means is a parameter-free horizontal reference in the curves. NCut uses stable log-domain normalization; any unavailable results remain gaps.
 
 The baseline runner uses standard sklearn KMeans and SciPy primitives with paper-specific matrix construction. LLC is the linear-kernel LLC-L version, not LLE or LLC-G. DisKmeans uses its discriminative kernel through an exact feature transformation. See BASELINES.md before interpreting degeneracies or comparing parameter values with different meanings.
 
@@ -145,7 +145,18 @@ Fixed versions, hashes, sample order and seeds improve reproducibility, but nume
 
 Tests cover local inverse equivalence, symmetry, zero row sums, positive semidefiniteness, eigen residuals, disconnected graphs, decreasing rotation loss, permutation-invariant ACC, empty/fewer/more clusters, sample report consistency, and correct table selection. The GitHub Actions workflow runs unit tests without downloading the full benchmarks.
 
-## References
+## GitHub and references
+
+This source archive is ready to upload; no remote GitHub repository was created automatically.
+
+```bash
+git init
+git add .
+git commit -m "Add paper-style LDMGI tables and regularization curves"
+git branch -M main
+git remote add origin YOUR_GITHUB_REPOSITORY_URL
+git push -u origin main
+```
 
 Raw datasets and paper PDFs are not redistributed. Sample previews support research result inspection; follow each dataset's terms and cite its source.
 

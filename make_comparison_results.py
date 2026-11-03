@@ -36,7 +36,7 @@ def table_export(out,key,title,values,raw):
         cell.set_edgecolor('#cbd5e1')
         if i==0:cell.set_facecolor('#e2e8f0');cell.set_text_props(weight='bold')
         elif j==5:cell.set_facecolor('#eff6ff')
-    fig.text(.5,.025,'LLC = LLC-L (linear kernel). NCut underflowed bandwidths are excluded and explicitly listed in the report.',ha='center',fontsize=8)
+    fig.text(.5,.025,'LLC = LLC-L (linear kernel). NCut uses log-domain affinity normalization; numerical degeneracies are reported.',ha='center',fontsize=8)
     fig.tight_layout(rect=(0,.1,1,1))
     for ext in ('png','svg'):fig.savefig(out/(key+'.'+ext),dpi=200,bbox_inches='tight')
     plt.close(fig);return md
@@ -64,7 +64,7 @@ def generate(root='results',document='RESULTS.md'):
       '- LDMGI: the unchanged implementation and previously executed 9 x 20 starts.',
       '- Best ACC/NMI: select minimum-objective initialization at each usable parameter, then independently select the best parameter for each metric. Mean tables select the best parameter by that metric\'s mean and report its standard deviation (ddof=0). This is oracle benchmark selection with labels, not a deployable unsupervised parameter rule.',
       '- All methods use the same 0-19 seed set. NCut/LLC use five neighbors excluding self; LDMGI uses self plus four neighbors, following the local-set definitions. sklearn k-means++ initialization is an explicit implementation choice.',
-      '- The parameter grid is 1e-8 through 1e8 in factors of 100. Underflow/degenerate runs are reported below, not scored as zero or silently fixed. No claim of exact published scores or statistical significance is made.','']
+      '- The parameter grid is 1e-8 through 1e8 in factors of 100. NCut uses log-domain normalization. Degenerate rows and any failures are reported below, not hidden. No claim of exact published scores or statistical significance is made.','']
     for key,title in [('best_acc','Table II: Best ACC'),('best_nmi','Table III: Best NMI'),('mean_acc','Table IV: Mean ACC and standard deviation'),('mean_nmi','Table V: Mean NMI and standard deviation')]:
         metric=key.split('_')[1];mean=key.startswith('mean');values=[];raw=[];selections[key]={}
         for d in DATASETS:

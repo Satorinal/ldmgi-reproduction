@@ -20,10 +20,10 @@
       "ncut": {
         "dataset": "coil20",
         "method": "ncut",
-        "value_percent": 80.97222222222223,
+        "value_percent": 88.54166666666666,
         "std_percent": null,
-        "selected_parameter": 100.0,
-        "selected_seed": 15
+        "selected_parameter": 1.0,
+        "selected_seed": 7
       },
       "llc_l": {
         "dataset": "coil20",
@@ -107,7 +107,7 @@
         "value_percent": 62.03999999999999,
         "std_percent": null,
         "selected_parameter": 100.0,
-        "selected_seed": 1
+        "selected_seed": 12
       },
       "llc_l": {
         "dataset": "mnist",
@@ -148,10 +148,10 @@
       "ncut": {
         "dataset": "coil20",
         "method": "ncut",
-        "value_percent": 92.7726909726548,
+        "value_percent": 95.55813987878685,
         "std_percent": null,
-        "selected_parameter": 100.0,
-        "selected_seed": 15
+        "selected_parameter": 1.0,
+        "selected_seed": 7
       },
       "llc_l": {
         "dataset": "coil20",
@@ -235,7 +235,7 @@
         "value_percent": 68.30784723707373,
         "std_percent": null,
         "selected_parameter": 100.0,
-        "selected_seed": 1
+        "selected_seed": 12
       },
       "llc_l": {
         "dataset": "mnist",
@@ -276,9 +276,9 @@
       "ncut": {
         "dataset": "coil20",
         "method": "ncut",
-        "value_percent": 80.97222222222221,
-        "std_percent": 1.1102230246251565e-14,
-        "selected_parameter": 100.0,
+        "value_percent": 88.54166666666666,
+        "std_percent": 0.0,
+        "selected_parameter": 1.0,
         "selected_seed": null
       },
       "llc_l": {
@@ -404,9 +404,9 @@
       "ncut": {
         "dataset": "coil20",
         "method": "ncut",
-        "value_percent": 92.77269097265481,
-        "std_percent": 1.1102230246251565e-14,
-        "selected_parameter": 10000.0,
+        "value_percent": 95.55813987878683,
+        "std_percent": 2.220446049250313e-14,
+        "selected_parameter": 1.0,
         "selected_seed": null
       },
       "llc_l": {

@@ -45,7 +45,9 @@ W_{ij}=\exp\!\left(-\frac{\lVert x_i-x_j\rVert^2}{\sigma^2}\right)
 
 The c smallest eigenvectors, including the trivial direction, are row-normalized and discretized with the existing Yu-Shi routine. The representative minimizes the discrete normalized-cut objective, sum of cut/volume, not the unnormalized count-based LDMGI trace. A test verifies the matrix expression against direct edge cuts.
 
-On the current pixel scale, sigma=1e-8, 1e-6, 1e-4 and 1e-2 cause Gaussian weights to underflow on these datasets. These grid settings are recorded as failed, with no fabricated predictions or metric values. Curves have gaps and table selections use the remaining five bandwidths. No epsilon floor, graph reconnection, changed bandwidth or different input normalization is silently introduced.
+Gaussian normalization is now computed directly in log space with extended-precision intermediates. Row maxima and log sums are kept separate to avoid cancellation at extreme bandwidths. The discrete normalized-cut objective uses the same stable degree representation. No self-loops, weight floors or changed bandwidths are introduced. Tiny normalized edges can still vanish, representing an effectively disconnected graph; zero embedding rows and invalid starts remain explicitly reported. A computable result at an extreme bandwidth is not necessarily meaningful.
+
+The previous version rejected raw Gaussian underflow. Version 4 replaces that computation and reruns NCut only. Other algorithms and their predictions are unchanged.
 
 ### LLC-L
 
