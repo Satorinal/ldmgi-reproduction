@@ -1,0 +1,106 @@
+{
+  "kmeans:1": {
+    "seed": 10,
+    "reg": null,
+    "acc": 0.6638888888888889,
+    "nmi": 0.7826732399884628,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "diskmeans:1": {
+    "seed": 17,
+    "reg": 1.0,
+    "acc": 0.1701388888888889,
+    "nmi": 0.31456472682959463,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ncut:1": {
+    "seed": 0,
+    "reg": 1.0,
+    "acc": 0.7479166666666667,
+    "nmi": 0.9231329352799342,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "llc_l:1": {
+    "seed": 7,
+    "reg": 1.0,
+    "acc": 0.6486111111111111,
+    "nmi": 0.8559758849835293,
+    "status": "ok",
+    "zero_embedding_rows": 72
+  },
+  "ldmgi:1": {
+    "seed": 11,
+    "reg": 1.0,
+    "acc": 0.8402777777777778,
+    "nmi": 0.946825778541519,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "kmeans:100": {
+    "seed": 10,
+    "reg": null,
+    "acc": 0.6638888888888889,
+    "nmi": 0.7826732399884628,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "diskmeans:100": {
+    "seed": 16,
+    "reg": 100.0,
+    "acc": 0.49375,
+    "nmi": 0.6922635278316494,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ncut:100": {
+    "seed": 15,
+    "reg": 100.0,
+    "acc": 0.8097222222222222,
+    "nmi": 0.927726909726548,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "llc_l:100": {
+    "seed": 14,
+    "reg": 100.0,
+    "acc": 0.4076388888888889,
+    "nmi": 0.7304122571173031,
+    "status": "ok",
+    "zero_embedding_rows": 144
+  },
+  "ldmgi:100": {
+    "seed": 12,
+    "reg": 100.0,
+    "acc": 0.81875,
+    "nmi": 0.9394644566431208,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ldmgi:1e-06": {
+    "seed": 0,
+    "reg": 1e-06,
+    "acc": 0.8402777777777778,
+    "nmi": 0.946825778541519,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ldmgi:0.01": {
+    "seed": 7,
+    "reg": 0.01,
+    "acc": 0.8402777777777778,
+    "nmi": 0.946825778541519,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ldmgi:10000": {
+    "seed": 0,
+    "reg": 10000.0,
+    "acc": 0.7993055555555556,
+    "nmi": 0.9305505868816125,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  }
+}

@@ -1,0 +1,16 @@
+dataset,method,value_percent,std_percent,selected_parameter,selected_seed
+coil20,kmeans,66.38888888888889,,,10
+coil20,diskmeans,70.97222222222223,,1000000.0,12
+coil20,ncut,80.97222222222223,,100.0,15
+coil20,llc_l,65.48611111111111,,1e-06,4
+coil20,ldmgi,84.02777777777779,,1e-08,0
+usps,kmeans,67.28328672832868,,,3
+usps,diskmeans,70.6496020649602,,10000.0,14
+usps,ncut,66.45515164551516,,100.0,4
+usps,llc_l,95.33232953323295,,1.0,17
+usps,ldmgi,96.27876962787695,,1.0,4
+mnist,kmeans,51.68000000000001,,,17
+mnist,diskmeans,57.92,,10000.0,8
+mnist,ncut,62.03999999999999,,100.0,1
+mnist,llc_l,75.38,,1.0,7
+mnist,ldmgi,78.46,,1.0,19

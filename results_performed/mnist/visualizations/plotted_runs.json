@@ -1,0 +1,106 @@
+{
+  "kmeans:1": {
+    "seed": 17,
+    "reg": null,
+    "acc": 0.5168,
+    "nmi": 0.49414329558647596,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "diskmeans:1": {
+    "seed": 12,
+    "reg": 1.0,
+    "acc": 0.2414,
+    "nmi": 0.15881266930027158,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ncut:1": {
+    "seed": 1,
+    "reg": 1.0,
+    "acc": 0.279,
+    "nmi": 0.37986992991348956,
+    "status": "ok",
+    "zero_embedding_rows": 64
+  },
+  "llc_l:1": {
+    "seed": 7,
+    "reg": 1.0,
+    "acc": 0.7538,
+    "nmi": 0.7525924051038065,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ldmgi:1": {
+    "seed": 19,
+    "reg": 1.0,
+    "acc": 0.7846,
+    "nmi": 0.770957218979606,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "kmeans:100": {
+    "seed": 17,
+    "reg": null,
+    "acc": 0.5168,
+    "nmi": 0.49414329558647596,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "diskmeans:100": {
+    "seed": 7,
+    "reg": 100.0,
+    "acc": 0.4194,
+    "nmi": 0.38251487739335377,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ncut:100": {
+    "seed": 1,
+    "reg": 100.0,
+    "acc": 0.6204,
+    "nmi": 0.6830784723707373,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "llc_l:100": {
+    "seed": 8,
+    "reg": 100.0,
+    "acc": 0.48,
+    "nmi": 0.6412067646595467,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ldmgi:100": {
+    "seed": 8,
+    "reg": 100.0,
+    "acc": 0.74,
+    "nmi": 0.7381604091528998,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ldmgi:1e-06": {
+    "seed": 11,
+    "reg": 1e-06,
+    "acc": 0.7826,
+    "nmi": 0.7680969830980461,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ldmgi:0.01": {
+    "seed": 1,
+    "reg": 0.01,
+    "acc": 0.7826,
+    "nmi": 0.768096983098046,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  },
+  "ldmgi:10000": {
+    "seed": 0,
+    "reg": 10000.0,
+    "acc": 0.7246,
+    "nmi": 0.7279125379215834,
+    "status": "ok",
+    "zero_embedding_rows": 0
+  }
+}

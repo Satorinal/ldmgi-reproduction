@@ -1,0 +1,4 @@
+dataset,published_percent,reproduced_percent,selected_reg,starts,valid_starts,selected_seed
+coil20,82.4,84.02777777777779,1e-08,20,20,0
+usps,81.5,96.27876962787695,1.0,20,20,4
+mnist,72.8,78.46,1.0,20,20,19

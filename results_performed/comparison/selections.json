@@ -1,0 +1,514 @@
+{
+  "best_acc": {
+    "coil20": {
+      "kmeans": {
+        "dataset": "coil20",
+        "method": "kmeans",
+        "value_percent": 66.38888888888889,
+        "std_percent": null,
+        "selected_parameter": null,
+        "selected_seed": 10
+      },
+      "diskmeans": {
+        "dataset": "coil20",
+        "method": "diskmeans",
+        "value_percent": 70.97222222222223,
+        "std_percent": null,
+        "selected_parameter": 1000000.0,
+        "selected_seed": 12
+      },
+      "ncut": {
+        "dataset": "coil20",
+        "method": "ncut",
+        "value_percent": 80.97222222222223,
+        "std_percent": null,
+        "selected_parameter": 100.0,
+        "selected_seed": 15
+      },
+      "llc_l": {
+        "dataset": "coil20",
+        "method": "llc_l",
+        "value_percent": 65.48611111111111,
+        "std_percent": null,
+        "selected_parameter": 1e-06,
+        "selected_seed": 4
+      },
+      "ldmgi": {
+        "dataset": "coil20",
+        "method": "ldmgi",
+        "value_percent": 84.02777777777779,
+        "std_percent": null,
+        "selected_parameter": 1e-08,
+        "selected_seed": 0
+      }
+    },
+    "usps": {
+      "kmeans": {
+        "dataset": "usps",
+        "method": "kmeans",
+        "value_percent": 67.28328672832868,
+        "std_percent": null,
+        "selected_parameter": null,
+        "selected_seed": 3
+      },
+      "diskmeans": {
+        "dataset": "usps",
+        "method": "diskmeans",
+        "value_percent": 70.6496020649602,
+        "std_percent": null,
+        "selected_parameter": 10000.0,
+        "selected_seed": 14
+      },
+      "ncut": {
+        "dataset": "usps",
+        "method": "ncut",
+        "value_percent": 66.45515164551516,
+        "std_percent": null,
+        "selected_parameter": 100.0,
+        "selected_seed": 4
+      },
+      "llc_l": {
+        "dataset": "usps",
+        "method": "llc_l",
+        "value_percent": 95.33232953323295,
+        "std_percent": null,
+        "selected_parameter": 1.0,
+        "selected_seed": 17
+      },
+      "ldmgi": {
+        "dataset": "usps",
+        "method": "ldmgi",
+        "value_percent": 96.27876962787695,
+        "std_percent": null,
+        "selected_parameter": 1.0,
+        "selected_seed": 4
+      }
+    },
+    "mnist": {
+      "kmeans": {
+        "dataset": "mnist",
+        "method": "kmeans",
+        "value_percent": 51.68000000000001,
+        "std_percent": null,
+        "selected_parameter": null,
+        "selected_seed": 17
+      },
+      "diskmeans": {
+        "dataset": "mnist",
+        "method": "diskmeans",
+        "value_percent": 57.92,
+        "std_percent": null,
+        "selected_parameter": 10000.0,
+        "selected_seed": 8
+      },
+      "ncut": {
+        "dataset": "mnist",
+        "method": "ncut",
+        "value_percent": 62.03999999999999,
+        "std_percent": null,
+        "selected_parameter": 100.0,
+        "selected_seed": 1
+      },
+      "llc_l": {
+        "dataset": "mnist",
+        "method": "llc_l",
+        "value_percent": 75.38,
+        "std_percent": null,
+        "selected_parameter": 1.0,
+        "selected_seed": 7
+      },
+      "ldmgi": {
+        "dataset": "mnist",
+        "method": "ldmgi",
+        "value_percent": 78.46,
+        "std_percent": null,
+        "selected_parameter": 1.0,
+        "selected_seed": 19
+      }
+    }
+  },
+  "best_nmi": {
+    "coil20": {
+      "kmeans": {
+        "dataset": "coil20",
+        "method": "kmeans",
+        "value_percent": 78.26732399884628,
+        "std_percent": null,
+        "selected_parameter": null,
+        "selected_seed": 10
+      },
+      "diskmeans": {
+        "dataset": "coil20",
+        "method": "diskmeans",
+        "value_percent": 80.18652873576585,
+        "std_percent": null,
+        "selected_parameter": 1000000.0,
+        "selected_seed": 12
+      },
+      "ncut": {
+        "dataset": "coil20",
+        "method": "ncut",
+        "value_percent": 92.7726909726548,
+        "std_percent": null,
+        "selected_parameter": 100.0,
+        "selected_seed": 15
+      },
+      "llc_l": {
+        "dataset": "coil20",
+        "method": "llc_l",
+        "value_percent": 85.59758849835293,
+        "std_percent": null,
+        "selected_parameter": 1.0,
+        "selected_seed": 7
+      },
+      "ldmgi": {
+        "dataset": "coil20",
+        "method": "ldmgi",
+        "value_percent": 94.6825778541519,
+        "std_percent": null,
+        "selected_parameter": 1e-08,
+        "selected_seed": 0
+      }
+    },
+    "usps": {
+      "kmeans": {
+        "dataset": "usps",
+        "method": "kmeans",
+        "value_percent": 61.32352452824653,
+        "std_percent": null,
+        "selected_parameter": null,
+        "selected_seed": 3
+      },
+      "diskmeans": {
+        "dataset": "usps",
+        "method": "diskmeans",
+        "value_percent": 67.63244343600273,
+        "std_percent": null,
+        "selected_parameter": 10000.0,
+        "selected_seed": 14
+      },
+      "ncut": {
+        "dataset": "usps",
+        "method": "ncut",
+        "value_percent": 80.50910054830673,
+        "std_percent": null,
+        "selected_parameter": 100.0,
+        "selected_seed": 4
+      },
+      "llc_l": {
+        "dataset": "usps",
+        "method": "llc_l",
+        "value_percent": 89.85789699707817,
+        "std_percent": null,
+        "selected_parameter": 1.0,
+        "selected_seed": 17
+      },
+      "ldmgi": {
+        "dataset": "usps",
+        "method": "ldmgi",
+        "value_percent": 91.12130572739602,
+        "std_percent": null,
+        "selected_parameter": 1.0,
+        "selected_seed": 4
+      }
+    },
+    "mnist": {
+      "kmeans": {
+        "dataset": "mnist",
+        "method": "kmeans",
+        "value_percent": 49.414329558647594,
+        "std_percent": null,
+        "selected_parameter": null,
+        "selected_seed": 17
+      },
+      "diskmeans": {
+        "dataset": "mnist",
+        "method": "diskmeans",
+        "value_percent": 53.53321483100943,
+        "std_percent": null,
+        "selected_parameter": 10000.0,
+        "selected_seed": 8
+      },
+      "ncut": {
+        "dataset": "mnist",
+        "method": "ncut",
+        "value_percent": 68.30784723707373,
+        "std_percent": null,
+        "selected_parameter": 100.0,
+        "selected_seed": 1
+      },
+      "llc_l": {
+        "dataset": "mnist",
+        "method": "llc_l",
+        "value_percent": 75.25924051038065,
+        "std_percent": null,
+        "selected_parameter": 1.0,
+        "selected_seed": 7
+      },
+      "ldmgi": {
+        "dataset": "mnist",
+        "method": "ldmgi",
+        "value_percent": 77.0957218979606,
+        "std_percent": null,
+        "selected_parameter": 1.0,
+        "selected_seed": 19
+      }
+    }
+  },
+  "mean_acc": {
+    "coil20": {
+      "kmeans": {
+        "dataset": "coil20",
+        "method": "kmeans",
+        "value_percent": 64.02430555555556,
+        "std_percent": 3.347371697330996,
+        "selected_parameter": null,
+        "selected_seed": null
+      },
+      "diskmeans": {
+        "dataset": "coil20",
+        "method": "diskmeans",
+        "value_percent": 64.625,
+        "std_percent": 3.539991433867018,
+        "selected_parameter": 1000000.0,
+        "selected_seed": null
+      },
+      "ncut": {
+        "dataset": "coil20",
+        "method": "ncut",
+        "value_percent": 80.97222222222221,
+        "std_percent": 1.1102230246251565e-14,
+        "selected_parameter": 100.0,
+        "selected_seed": null
+      },
+      "llc_l": {
+        "dataset": "coil20",
+        "method": "llc_l",
+        "value_percent": 63.18055555555555,
+        "std_percent": 2.3064129931696384,
+        "selected_parameter": 1e-08,
+        "selected_seed": null
+      },
+      "ldmgi": {
+        "dataset": "coil20",
+        "method": "ldmgi",
+        "value_percent": 81.9548611111111,
+        "std_percent": 1.8938449839684526,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      }
+    },
+    "usps": {
+      "kmeans": {
+        "dataset": "usps",
+        "method": "kmeans",
+        "value_percent": 64.61281996128199,
+        "std_percent": 2.6271632345245544,
+        "selected_parameter": null,
+        "selected_seed": null
+      },
+      "diskmeans": {
+        "dataset": "usps",
+        "method": "diskmeans",
+        "value_percent": 67.43546999354702,
+        "std_percent": 3.8903802944066155,
+        "selected_parameter": 10000.0,
+        "selected_seed": null
+      },
+      "ncut": {
+        "dataset": "usps",
+        "method": "ncut",
+        "value_percent": 66.45999139599914,
+        "std_percent": 0.005350545478096328,
+        "selected_parameter": 10000.0,
+        "selected_seed": null
+      },
+      "llc_l": {
+        "dataset": "usps",
+        "method": "llc_l",
+        "value_percent": 95.35330178533016,
+        "std_percent": 0.012939567020346373,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      },
+      "ldmgi": {
+        "dataset": "usps",
+        "method": "ldmgi",
+        "value_percent": 85.50333405033342,
+        "std_percent": 5.75279860225093,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      }
+    },
+    "mnist": {
+      "kmeans": {
+        "dataset": "mnist",
+        "method": "kmeans",
+        "value_percent": 55.637,
+        "std_percent": 4.722564028152503,
+        "selected_parameter": null,
+        "selected_seed": null
+      },
+      "diskmeans": {
+        "dataset": "mnist",
+        "method": "diskmeans",
+        "value_percent": 57.142,
+        "std_percent": 3.3573435927828417,
+        "selected_parameter": 10000.0,
+        "selected_seed": null
+      },
+      "ncut": {
+        "dataset": "mnist",
+        "method": "ncut",
+        "value_percent": 62.202,
+        "std_percent": 0.2547076755812439,
+        "selected_parameter": 10000.0,
+        "selected_seed": null
+      },
+      "llc_l": {
+        "dataset": "mnist",
+        "method": "llc_l",
+        "value_percent": 75.394,
+        "std_percent": 0.014282856857084128,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      },
+      "ldmgi": {
+        "dataset": "mnist",
+        "method": "ldmgi",
+        "value_percent": 77.75999999999999,
+        "std_percent": 2.0538062226023164,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      }
+    }
+  },
+  "mean_nmi": {
+    "coil20": {
+      "kmeans": {
+        "dataset": "coil20",
+        "method": "kmeans",
+        "value_percent": 77.40779900071246,
+        "std_percent": 1.5828048312919285,
+        "selected_parameter": null,
+        "selected_seed": null
+      },
+      "diskmeans": {
+        "dataset": "coil20",
+        "method": "diskmeans",
+        "value_percent": 77.67950975539503,
+        "std_percent": 1.4210520300105887,
+        "selected_parameter": 1000000.0,
+        "selected_seed": null
+      },
+      "ncut": {
+        "dataset": "coil20",
+        "method": "ncut",
+        "value_percent": 92.77269097265481,
+        "std_percent": 1.1102230246251565e-14,
+        "selected_parameter": 10000.0,
+        "selected_seed": null
+      },
+      "llc_l": {
+        "dataset": "coil20",
+        "method": "llc_l",
+        "value_percent": 85.22334267527609,
+        "std_percent": 0.8327479562163238,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      },
+      "ldmgi": {
+        "dataset": "coil20",
+        "method": "ldmgi",
+        "value_percent": 94.00381211217007,
+        "std_percent": 0.6649776694488582,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      }
+    },
+    "usps": {
+      "kmeans": {
+        "dataset": "usps",
+        "method": "kmeans",
+        "value_percent": 61.04245905653261,
+        "std_percent": 0.7704453962929201,
+        "selected_parameter": null,
+        "selected_seed": null
+      },
+      "diskmeans": {
+        "dataset": "usps",
+        "method": "diskmeans",
+        "value_percent": 66.51541070506532,
+        "std_percent": 1.654808314387484,
+        "selected_parameter": 10000.0,
+        "selected_seed": null
+      },
+      "ncut": {
+        "dataset": "usps",
+        "method": "ncut",
+        "value_percent": 80.50328730677329,
+        "std_percent": 0.003862023790917937,
+        "selected_parameter": 10000.0,
+        "selected_seed": null
+      },
+      "llc_l": {
+        "dataset": "usps",
+        "method": "llc_l",
+        "value_percent": 89.89485544041779,
+        "std_percent": 0.01959738796816415,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      },
+      "ldmgi": {
+        "dataset": "usps",
+        "method": "ldmgi",
+        "value_percent": 87.20207673571169,
+        "std_percent": 1.7308765372381112,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      }
+    },
+    "mnist": {
+      "kmeans": {
+        "dataset": "mnist",
+        "method": "kmeans",
+        "value_percent": 51.25346295958598,
+        "std_percent": 1.8797992821179272,
+        "selected_parameter": null,
+        "selected_seed": null
+      },
+      "diskmeans": {
+        "dataset": "mnist",
+        "method": "diskmeans",
+        "value_percent": 52.688060778300596,
+        "std_percent": 1.5199242402793887,
+        "selected_parameter": 10000.0,
+        "selected_seed": null
+      },
+      "ncut": {
+        "dataset": "mnist",
+        "method": "ncut",
+        "value_percent": 68.30155950328046,
+        "std_percent": 0.023722912727452805,
+        "selected_parameter": 100.0,
+        "selected_seed": null
+      },
+      "llc_l": {
+        "dataset": "mnist",
+        "method": "llc_l",
+        "value_percent": 75.26115784747913,
+        "std_percent": 0.024440851582529306,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      },
+      "ldmgi": {
+        "dataset": "mnist",
+        "method": "ldmgi",
+        "value_percent": 76.50056169665487,
+        "std_percent": 0.9473996199388799,
+        "selected_parameter": 1.0,
+        "selected_seed": null
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "best_acc": {
+    "coil20": {
+      "dataset": "coil20",
+      "published_percent": 82.4,
+      "reproduced_percent": 84.02777777777779,
+      "selected_reg": 1e-08,
+      "starts": 20,
+      "valid_starts": 20,
+      "selected_seed": 0
+    },
+    "usps": {
+      "dataset": "usps",
+      "published_percent": 81.5,
+      "reproduced_percent": 96.27876962787695,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "selected_seed": 4
+    },
+    "mnist": {
+      "dataset": "mnist",
+      "published_percent": 72.8,
+      "reproduced_percent": 78.46,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "selected_seed": 19
+    }
+  },
+  "best_nmi": {
+    "coil20": {
+      "dataset": "coil20",
+      "published_percent": 91.1,
+      "reproduced_percent": 94.6825778541519,
+      "selected_reg": 1e-08,
+      "starts": 20,
+      "valid_starts": 20,
+      "selected_seed": 0
+    },
+    "usps": {
+      "dataset": "usps",
+      "published_percent": 86.5,
+      "reproduced_percent": 91.12130572739602,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "selected_seed": 4
+    },
+    "mnist": {
+      "dataset": "mnist",
+      "published_percent": 69.2,
+      "reproduced_percent": 77.0957218979606,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "selected_seed": 19
+    }
+  },
+  "mean_acc": {
+    "coil20": {
+      "dataset": "coil20",
+      "published_percent": 75.3,
+      "reproduced_percent": 81.9548611111111,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "published_std_percent": 4.9,
+      "reproduced_std_percent": 1.8938449839684526
+    },
+    "usps": {
+      "dataset": "usps",
+      "published_percent": 80.5,
+      "reproduced_percent": 85.50333405033342,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "published_std_percent": 5.6,
+      "reproduced_std_percent": 5.75279860225093
+    },
+    "mnist": {
+      "dataset": "mnist",
+      "published_percent": 71.5,
+      "reproduced_percent": 77.75999999999999,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "published_std_percent": 3.5,
+      "reproduced_std_percent": 2.0538062226023164
+    }
+  },
+  "mean_nmi": {
+    "coil20": {
+      "dataset": "coil20",
+      "published_percent": 90.0,
+      "reproduced_percent": 94.00381211217007,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "published_std_percent": 0.7,
+      "reproduced_std_percent": 0.6649776694488582
+    },
+    "usps": {
+      "dataset": "usps",
+      "published_percent": 86.1,
+      "reproduced_percent": 87.20207673571169,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "published_std_percent": 2.3,
+      "reproduced_std_percent": 1.7308765372381112
+    },
+    "mnist": {
+      "dataset": "mnist",
+      "published_percent": 68.9,
+      "reproduced_percent": 76.50056169665487,
+      "selected_reg": 1.0,
+      "starts": 20,
+      "valid_starts": 20,
+      "published_std_percent": 1.5,
+      "reproduced_std_percent": 0.9473996199388799
+    }
+  }
+}

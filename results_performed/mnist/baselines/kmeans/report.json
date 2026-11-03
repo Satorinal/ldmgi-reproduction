@@ -1,0 +1,497 @@
+{
+  "method": "kmeans",
+  "dataset": "mnist",
+  "shape": [
+    5000,
+    784
+  ],
+  "runs": 20,
+  "k": 5,
+  "sha256": {
+    "t10k-images-idx3-ubyte.gz": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6",
+    "t10k-labels-idx1-ubyte.gz": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6"
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "implementation": "kmeans",
+  "results": [
+    {
+      "reg": null,
+      "status": "ok",
+      "trials": [
+        {
+          "objective": 196595.83758074074,
+          "iterations": 44,
+          "converged": true,
+          "valid": true,
+          "seed": 0,
+          "acc": 0.5058,
+          "nmi": 0.4950758957063105,
+          "cluster_sizes": [
+            389,
+            702,
+            393,
+            927,
+            709,
+            309,
+            493,
+            343,
+            277,
+            458
+          ]
+        },
+        {
+          "objective": 196350.98230295835,
+          "iterations": 29,
+          "converged": true,
+          "valid": true,
+          "seed": 1,
+          "acc": 0.5262,
+          "nmi": 0.5137767326649448,
+          "cluster_sizes": [
+            395,
+            459,
+            571,
+            389,
+            432,
+            710,
+            313,
+            698,
+            736,
+            297
+          ]
+        },
+        {
+          "objective": 196217.21119683527,
+          "iterations": 60,
+          "converged": true,
+          "valid": true,
+          "seed": 2,
+          "acc": 0.5146,
+          "nmi": 0.4939794444647158,
+          "cluster_sizes": [
+            502,
+            365,
+            562,
+            431,
+            649,
+            639,
+            599,
+            467,
+            446,
+            340
+          ]
+        },
+        {
+          "objective": 196305.82858964617,
+          "iterations": 47,
+          "converged": true,
+          "valid": true,
+          "seed": 3,
+          "acc": 0.5666,
+          "nmi": 0.5239022677818557,
+          "cluster_sizes": [
+            546,
+            541,
+            694,
+            442,
+            483,
+            702,
+            347,
+            441,
+            447,
+            357
+          ]
+        },
+        {
+          "objective": 196524.9359256337,
+          "iterations": 32,
+          "converged": true,
+          "valid": true,
+          "seed": 4,
+          "acc": 0.4922,
+          "nmi": 0.4843896323098658,
+          "cluster_sizes": [
+            656,
+            444,
+            522,
+            751,
+            338,
+            652,
+            416,
+            431,
+            428,
+            362
+          ]
+        },
+        {
+          "objective": 196380.38825186403,
+          "iterations": 34,
+          "converged": true,
+          "valid": true,
+          "seed": 5,
+          "acc": 0.59,
+          "nmi": 0.5282918343946458,
+          "cluster_sizes": [
+            683,
+            508,
+            616,
+            440,
+            668,
+            298,
+            232,
+            399,
+            593,
+            563
+          ]
+        },
+        {
+          "objective": 198163.79307360767,
+          "iterations": 29,
+          "converged": true,
+          "valid": true,
+          "seed": 6,
+          "acc": 0.517,
+          "nmi": 0.5007903301220774,
+          "cluster_sizes": [
+            691,
+            384,
+            722,
+            528,
+            650,
+            365,
+            298,
+            531,
+            588,
+            243
+          ]
+        },
+        {
+          "objective": 196466.24847409298,
+          "iterations": 36,
+          "converged": true,
+          "valid": true,
+          "seed": 7,
+          "acc": 0.5474,
+          "nmi": 0.5067163388650391,
+          "cluster_sizes": [
+            388,
+            511,
+            290,
+            395,
+            626,
+            653,
+            735,
+            582,
+            524,
+            296
+          ]
+        },
+        {
+          "objective": 196954.66408491594,
+          "iterations": 24,
+          "converged": true,
+          "valid": true,
+          "seed": 8,
+          "acc": 0.567,
+          "nmi": 0.5201369442886822,
+          "cluster_sizes": [
+            416,
+            666,
+            889,
+            516,
+            369,
+            304,
+            268,
+            732,
+            450,
+            390
+          ]
+        },
+        {
+          "objective": 196188.2414009964,
+          "iterations": 36,
+          "converged": true,
+          "valid": true,
+          "seed": 9,
+          "acc": 0.613,
+          "nmi": 0.5300975457506887,
+          "cluster_sizes": [
+            532,
+            378,
+            628,
+            699,
+            605,
+            423,
+            515,
+            451,
+            392,
+            377
+          ]
+        },
+        {
+          "objective": 196557.42751680754,
+          "iterations": 36,
+          "converged": true,
+          "valid": true,
+          "seed": 10,
+          "acc": 0.634,
+          "nmi": 0.5350665996998403,
+          "cluster_sizes": [
+            450,
+            536,
+            424,
+            596,
+            746,
+            506,
+            588,
+            367,
+            441,
+            346
+          ]
+        },
+        {
+          "objective": 196118.14639731165,
+          "iterations": 26,
+          "converged": true,
+          "valid": true,
+          "seed": 11,
+          "acc": 0.5334,
+          "nmi": 0.5046855794020655,
+          "cluster_sizes": [
+            645,
+            402,
+            729,
+            506,
+            323,
+            429,
+            570,
+            256,
+            748,
+            392
+          ]
+        },
+        {
+          "objective": 196152.7204091012,
+          "iterations": 59,
+          "converged": true,
+          "valid": true,
+          "seed": 12,
+          "acc": 0.559,
+          "nmi": 0.5081696817852125,
+          "cluster_sizes": [
+            435,
+            769,
+            567,
+            455,
+            620,
+            311,
+            416,
+            224,
+            562,
+            641
+          ]
+        },
+        {
+          "objective": 196563.67320140344,
+          "iterations": 45,
+          "converged": true,
+          "valid": true,
+          "seed": 13,
+          "acc": 0.65,
+          "nmi": 0.5527474432768533,
+          "cluster_sizes": [
+            560,
+            518,
+            359,
+            662,
+            450,
+            482,
+            638,
+            441,
+            507,
+            383
+          ]
+        },
+        {
+          "objective": 196341.22315611018,
+          "iterations": 46,
+          "converged": true,
+          "valid": true,
+          "seed": 14,
+          "acc": 0.5992,
+          "nmi": 0.5372024859197999,
+          "cluster_sizes": [
+            401,
+            427,
+            458,
+            416,
+            592,
+            456,
+            556,
+            411,
+            679,
+            604
+          ]
+        },
+        {
+          "objective": 197606.26602270582,
+          "iterations": 86,
+          "converged": true,
+          "valid": true,
+          "seed": 15,
+          "acc": 0.4636,
+          "nmi": 0.47398100483319244,
+          "cluster_sizes": [
+            276,
+            434,
+            394,
+            417,
+            770,
+            915,
+            235,
+            867,
+            303,
+            389
+          ]
+        },
+        {
+          "objective": 196670.40894422572,
+          "iterations": 32,
+          "converged": true,
+          "valid": true,
+          "seed": 16,
+          "acc": 0.5904,
+          "nmi": 0.5108908125572822,
+          "cluster_sizes": [
+            338,
+            624,
+            451,
+            750,
+            545,
+            560,
+            542,
+            445,
+            408,
+            337
+          ]
+        },
+        {
+          "objective": 196097.5867924348,
+          "iterations": 40,
+          "converged": true,
+          "valid": true,
+          "seed": 17,
+          "acc": 0.5168,
+          "nmi": 0.49414329558647596,
+          "cluster_sizes": [
+            277,
+            760,
+            416,
+            303,
+            710,
+            390,
+            588,
+            453,
+            722,
+            381
+          ]
+        },
+        {
+          "objective": 196358.53481246866,
+          "iterations": 33,
+          "converged": true,
+          "valid": true,
+          "seed": 18,
+          "acc": 0.5804,
+          "nmi": 0.5189026739759454,
+          "cluster_sizes": [
+            391,
+            299,
+            516,
+            728,
+            446,
+            244,
+            643,
+            583,
+            576,
+            574
+          ]
+        },
+        {
+          "objective": 196151.64072287537,
+          "iterations": 44,
+          "converged": true,
+          "valid": true,
+          "seed": 19,
+          "acc": 0.5608,
+          "nmi": 0.5177460485317031,
+          "cluster_sizes": [
+            445,
+            702,
+            417,
+            496,
+            727,
+            412,
+            379,
+            466,
+            485,
+            471
+          ]
+        }
+      ],
+      "selected_by_objective": {
+        "objective": 196097.5867924348,
+        "iterations": 40,
+        "converged": true,
+        "valid": true,
+        "seed": 17,
+        "acc": 0.5168,
+        "nmi": 0.49414329558647596,
+        "cluster_sizes": [
+          277,
+          760,
+          416,
+          303,
+          710,
+          390,
+          588,
+          453,
+          722,
+          381
+        ]
+      },
+      "mean_acc": 0.55637,
+      "std_acc": 0.04722564028152503,
+      "mean_nmi": 0.5125346295958598,
+      "std_nmi": 0.018797992821179273,
+      "seconds": 8.20123185400007
+    }
+  ]
+}
