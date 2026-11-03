@@ -145,18 +145,7 @@ Fixed versions, hashes, sample order and seeds improve reproducibility, but nume
 
 Tests cover local inverse equivalence, symmetry, zero row sums, positive semidefiniteness, eigen residuals, disconnected graphs, decreasing rotation loss, permutation-invariant ACC, empty/fewer/more clusters, sample report consistency, and correct table selection. The GitHub Actions workflow runs unit tests without downloading the full benchmarks.
 
-## GitHub and references
-
-This source archive is ready to upload; no remote GitHub repository was created automatically.
-
-```bash
-git init
-git add .
-git commit -m "Add paper-style LDMGI tables and regularization curves"
-git branch -M main
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-git push -u origin main
-```
+## References
 
 Raw datasets and paper PDFs are not redistributed. Sample previews support research result inspection; follow each dataset's terms and cite its source.
 
